@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Bursh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header__wrapper">
+      
+      <div class="header-top">
+        <div class="header-top__wrapper">
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <div class="menu" id="menu">
+            <div class="menu__icon" id="menu__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="menu__links">
+              <li><a class="menu__links-item  menu__links-item--1" href="#about">О проекте</a></li>
+              <li><a class="menu__links-item  menu__links-item--2" href="#offer">Преимущества</a></li>
+              <li><a class="menu__links-item  menu__links-item--3" href="#steps">Этапы</a></li>
+              <li><a class="menu__links-item  menu__links-item--4" href="#footer">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+
+        <div class="form">
+          <form class="content__form" action="/echo" method="post">
+            <legend>Подать <span style="color: #333635;">заявку</span></legend>
+            <p class="content__form-text">Вы можете подать заявку<br> для сотрудничества</p>
+            
+            <div class="content__input-wrap">
+            <label for="name"></label>
+            <input type="text" name="name" required placeholder="Имя" id="name" class="content__form-name">
+
+            <label for="name1"></label>
+            <input type="text" name="name1" required placeholder="Фамилия" id="name" class="content__form-name1">
+
+            <label for="activity"></label>
+            <input type="text" name="activity" required placeholder="Деятельность" id="name" class="content__activity">
+
+            <label for="email"></label>
+            <input type="email" name="email" required placeholder="E-mail" id="email" class="content__form-email">
+
+            <label for="who"></label>
+            <input type="text" name="who" placeholder="Кто вы?" class="content__form-who">
+            </div>
+
+            <button type="submit" class="content__form-btn">Отправить</button>
+          </form>
+        </div>
+
+        <div class="header__title">
+          <div class="header__title__wrap">
+          <h1>Развитие<br> и заработок<br> на своих навыках</h1>
+          <p>Всё как у взрослых!</p>
+          </div>
+          <div class="solial-header">
+            <a href="https://vk.com/bursh.officially"><img src="img/vk.png" alt=""></a>
+            <a href="https://instagram.com/bursh.official"><img src="img/in.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!----->
+  <section id="offer" class="offer"> 
+    <h2 class="offer__title">Что вы получите</h2>
+    <div class="offer__items">
+      <figure class="offer__item">
+        <img src="img/item3.png" alt="">
+        <figcaption class="offer__item-text">
+          Развитие в своих навыках
+        </figcaption>
+      </figure>
+      <figure class="offer__item">
+        <img src="img/item4.png" alt="">
+        <figcaption class="offer__item-text">
+          Заработок на своих умениях
+        </figcaption>
+      </figure>
+      <figure class="offer__item">
+        <img src="img/item1.png" alt="">
+        <figcaption class="offer__item-text">
+          Новые знакомства
+        </figcaption>
+      </figure>
+      <figure class="offer__item">
+        <img src="img/item2.png" alt="">
+        <figcaption class="offer__item-text">
+          Возможность научиться новому
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <!----about---->
+  <section id="about" class="about">
+  
+    <div class="about__wrapper"> 
+      <h2 class="about__title">О проекте</h2>
+      <div class="block">
+        <div class="block__text">
+          <h3>Bursh</h3>
+          <p>- это онлайн-платформа,<br> которая <span>поможет</span> студентам<br> зарабатывать на своих <span>навыках</span> и<br> <span>услугах</span>.<br> Так же приобретать <span>новые умения</span>. <br><br><br>Сайт ориентирован исключительно на <span>студентов</span>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---steps--->
+  <section id="steps" class="steps">
+    <div class="steps__wrapper">
+      <h2 class="steps__title">Этапы</h2>
+      <div class="steps__items">
+        <div class="steps__item  steps__item--1">
+          <p class="steps__item-number  steps__number--1">1</p>
+          <span class="steps__item-round"></span>
+          <p class="steps__item-text">Подача заявки</p>
+        </div>
+        <div class="steps__item  steps__item--2">
+          <p class="steps__item-number">2</p>
+          <span class="steps__item-round"></span>
+          <p class="steps__item-text">Проработка заявки</p>
+        </div>
+        <div class="steps__item  steps__item--3">
+          <p class="steps__item-number">4</p>
+          <span class="steps__item-round"></span>
+          <p class="steps__item-text">Запуск заработка студента<br> на своих навыках</p>
+        </div>
+        <div class="steps__item  steps__item--4">
+          <p class="steps__item-number">3</p>
+          <span class="steps__item-round"></span>
+          <p class="steps__item-text">Обратная связь со<br> студентом (более подробно<br> уточняем информацию)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---submit--->
+  <section id="submit" class="submit">
+    <div class="submit__wrapper">
+      <div class="submit__img">
+        <img src="img/img_footer.jpg" alt="">
+      </div>
+      <div class="submit__form">
+        
+          <form class="contacts__form" action="/echo" method="post">
+            <legend>Подать <span style="color: #333635;">заявку</span></legend>
+            <p class="contacts__form-text">Вы можете подать заявку для сотрудничества</p>
+            
+            <div class="contacts__input-wrap">
+            <label for="name"></label>
+            <input type="text" name="name" required placeholder="Имя" id="name" class="contacts__form-name">
+
+            <label for="name1"></label>
+            <input type="text" name="name1" required placeholder="Фамилия" id="name" class="contacts__form-name1">
+
+            <label for="activity"></label>
+            <input type="text" name="activity" required placeholder="Деятельность" id="name" class="contacts__activity">
+
+            <label for="email"></label>
+            <input type="email" name="email" required placeholder="E-mail" id="email" class="contacts__form-email">
+
+            <label for="who"></label>
+            <input type="text" name="who" placeholder="Кто вы?" class="contacts__form-who">
+            </div>
+
+            <button type="submit" class="contacts__form-btn">Отправить</button>
+          </form>
+       
+      </div>
+    </div>
+  </section>
+  <!---footer--->
+  <footer id="footer" class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__menu">
+        <ul class="footer__menu-1">
+          <li><a href="">О проекте</a></li>
+          <li><a href="">Преимущества</a></li>
+          <li><a href="">Этапы</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <ul class="footer__menu-2">
+          <li><a href="https://vk.com/bursh.officially">Вконтакте</a></li>
+          <li><a href="@bursh.official">Инстаграмм</a></li>
+          <li><a href="mailto:bursh.company@gmail.com">Почта</a></li>
+          <li><a href="#submit">Подать заявку</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <a href="mailto:bursh.company@gmail.com"><img src="img/letter-icon.png" alt=""></a>
+        <a href="https://instagram.com/bursh.official"><img src="img/in-icon.png" alt=""></a>
+        <a href="https://vk.com/bursh.officially"><img src="img/vk-icon.png" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
+
+  </body>
+</html>
