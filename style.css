@@ -148,6 +148,14 @@ section {
     text-align: left;
 }
 
+.content__form input:hover, .content__form input:active,
+.content__form input:focus {
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 3px 0px 0px 0px #e21f89 inset;
+-moz-box-shadow:    3px 0px 0px 0px #e21f89 inset;
+box-shadow: 3px 0px 0px 0px #e21f89 inset;
+}
+
 .content__form input:first-of-type {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
