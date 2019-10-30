@@ -20,7 +20,6 @@ section {
 .header {
   overflow: hidden;
   margin: 0 auto;
-  /*border: 2px solid red;*/
   width: 100%;
   max-width: 1900px;
   height: 100vh;
@@ -152,12 +151,6 @@ section {
     box-sizing: border-box;
     text-align: left;
 }
-/*
-input.content__form-input::placeholder,
-select.content__select::placeholder {
-  color: #bfbfbf;
-}*/
-
 
 input::-moz-placeholder { color: #bfbfbf; }
 input::-webkit-input-placeholder { color: #bfbfbf; }
@@ -215,9 +208,6 @@ border-image-slice: 1;
 }
 }
 
-/*.content__form-check {
-    margin-top: 0px;
-}*/
 
 .header__title {
   padding-right: 5px;
@@ -355,38 +345,6 @@ background-color: #a4e3ff;
 content: "";
 transition: width 0.6s;
 }
-
-
-/*
-.menu__links-item {
- position: relative;
-}
-
-.menu__links-item:after {
-  display: block;
-position: absolute;
-right: 0;
-bottom: -3px;
-width: 0;
-height: 2px;
-background-color: #a4e3ff;;
-content: "";
-transition: width 0.5s;
-}
-
-.menu__links-item:hover:after {
-width: 100%;
-display: block;
-position: absolute;
-left: 0;
-bottom: -3px;
-height: 2px;
-background-color: #a4e3ff;;
-content: "";
-transition: width 0.5s;
-}
-*/
-
 
 .menu__icon {
    display: none;
@@ -956,19 +914,6 @@ transition: width 0.5s;
   }
 }
 
-/*
-@media screen and (max-width: 1013px) {
-  .steps__wrapper::after {
-    left: 54px;
-  }
-}*/
-/*
-@media screen and (max-width: 1084px) {
-  .steps__wrapper::after {
-    left: 34px;
-  }
-}
-*/
 
 @media screen and (max-width: 1155px) {
   .steps__wrapper {
@@ -1135,10 +1080,6 @@ border-top: 1px solid #bababa;
 
 .contacts__form input:hover, .contacts__form input:active,
 .contacts__form input:focus {
-  /*transition: all 0.5s ease;
-  -webkit-box-shadow: -3px 0px 0px 0px #e21f89 inset;
--moz-box-shadow:    -3px 0px 0px 0px #e21f89 inset;
-box-shadow: -3px 0px 0px 0px #e21f89 inset;*/
 transition: all 0.5s ease;
 border-right: 3px solid transparent;
 border-image: linear-gradient(#e21f89 , #ff0c56);
@@ -1157,21 +1098,6 @@ border-image-slice: 1;
   border-bottom: 1px solid #bababa;
 }
 
-/*select.contactus-select {
-  font-family: "roboto-medium-webfont", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  box-sizing: border-box;
-  outline: 0;
-  display: table-cell;
-    border-color: transparent;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    color: #555;
-    background-color: #fff;
-    height: 50px;
-    margin: 0px 0px;
-    padding: 0 50px 0;
-} */
 
 .contacts__form-text {
     color: #9f9d9d;

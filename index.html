@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Bursh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     
@@ -51,8 +51,8 @@
                 <input type="text" name="name" required placeholder="Имя" id="name" class="content__form-name">
               </div>
               <div class="content__form-input">
-                <label for="name1"></label>
-                <input type="text" name="name1" required placeholder="Фамилия" id="fio" class="content__form-name1">
+                <label for="fio"></label>
+                <input type="text" name="fio" required placeholder="Фамилия" id="fio" class="content__form-name1">
               </div>
 
               <div class="content__form-input">
@@ -170,33 +170,34 @@
       </div>
       <div class="submit__form">
         
-          <form class="contacts__form" action="/echo" method="post">
+          <form class="contacts__form" action="mail1.php" method="post">
             <legend>Подать <span style="color: #333635;">заявку</span></legend>
             <p class="contacts__form-text">Вы можете подать заявку для сотрудничества</p>
             
             <div class="contacts__input-wrap">
             <div class="contacts__form-input">
-              <label for="name"></label>
-              <input type="text" name="name" required placeholder="Имя" id="name1" class="contacts__form-name">
-            </div>
-            
-            <div class="contacts__form-input">
               <label for="name1"></label>
-              <input type="text" name="name1" required placeholder="Фамилия" id="fio1" class="contacts__form-name1">
-            </div>
-            <div class="contacts__form-input">
-              <label for="activity"></label>
-              <input type="text" name="activity" required placeholder="Деятельность" id="activity1" class="contacts__activity">
+              <input type="text" name="name1" required placeholder="Имя" id="name1" class="contacts__form-name">
             </div>
             
             <div class="contacts__form-input">
-              <label for="email"></label>
-              <input type="email" name="email" required placeholder="E-mail" id="email1" class="contacts__form-email">
+              <label for="fio1"></label>
+              <input type="text" name="fio1" required placeholder="Фамилия" id="fio1" class="contacts__form-name1">
+            </div>
+
+            <div class="contacts__form-input">
+              <label for="activity1"></label>
+              <input type="text" name="activity1" required placeholder="Деятельность" id="activity1" class="contacts__activity">
             </div>
             
             <div class="contacts__form-input">
-              <label for="who"></label>
-              <input type="text" name="who" placeholder="Кто вы?" id="who1" class="contacts__form-who">
+              <label for="email1"></label>
+              <input type="email" name="email1" required placeholder="E-mail" id="email1" class="contacts__form-email">
+            </div>
+            
+            <div class="contacts__form-input">
+              <label for="who1"></label>
+              <input type="text" name="who1" placeholder="Кто вы?" id="who1" class="contacts__form-who">
               </div>
             </div>
 
