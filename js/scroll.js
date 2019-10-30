@@ -21,3 +21,19 @@ $(function() {
     })
 })
 */
+
+$(".menu__links-item--1").hover(function () {
+    $('.menu__links').toggleClass("menu__links1");
+ });
+
+ $(".menu__links-item--2").hover(function () {
+    $('.menu__links').toggleClass("menu__links2");
+ });
+
+ $(".menu__links-item--3").hover(function () {
+    $('.menu__links').toggleClass("menu__links3");
+ });
+
+ $(".menu__links-item--4").hover(function () {
+    $('.menu__links').toggleClass("menu__links4");
+ });

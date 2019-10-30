@@ -13,9 +13,7 @@
   </head>
   <body>
     <header id="header" class="header">
-      <div class="header__wrapper">
-      
-      <div class="header-top">
+        <div class="header-top">
         <div class="header-top__wrapper">
           <div class="header__logo">
             <a href="#">
@@ -30,43 +28,58 @@
               <span></span>
             </div>
             <ul class="menu__links">
-              <li><a class="menu__links-item  menu__links-item--1" href="#about">О проекте</a></li>
-              <li><a class="menu__links-item  menu__links-item--2" href="#offer">Преимущества</a></li>
-              <li><a class="menu__links-item  menu__links-item--3" href="#steps">Этапы</a></li>
-              <li><a class="menu__links-item  menu__links-item--4" href="#footer">Контакты</a></li>
+              <li class="menu__links-item--1"><a class="menu__links-item" href="#about">О проекте</a></li>
+              <li class="menu__links-item--2"><a class="menu__links-item" href="#offer">Преимущества</a></li>
+              <li class="menu__links-item--3"><a class="menu__links-item" href="#steps">Этапы</a></li>
+              <li class="menu__links-item--4"><a class="menu__links-item" href="#footer">Контакты</a></li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="header__wrapper">
+    
       <div class="content">
 
         <div class="form">
-          <form class="content__form" action="/echo" method="post">
+          <form class="content__form" action="mail.php" method="post">
             <legend>Подать <span style="color: #333635;">заявку</span></legend>
             <p class="content__form-text">Вы можете подать заявку<br> для сотрудничества</p>
             
             <div class="content__input-wrap">
-            <label for="name"></label>
-            <input type="text" name="name" required placeholder="Имя" id="name" class="content__form-name">
+              <div class="content__form-input">
+                <label for="name"></label>
+                <input type="text" name="name" required placeholder="Имя" id="name" class="content__form-name">
+              </div>
+              <div class="content__form-input">
+                <label for="name1"></label>
+                <input type="text" name="name1" required placeholder="Фамилия" id="fio" class="content__form-name1">
+              </div>
 
-            <label for="name1"></label>
-            <input type="text" name="name1" required placeholder="Фамилия" id="name" class="content__form-name1">
+              <div class="content__form-input">
+                <label for="items"></label>
+                <select class="content__select" id="items" name="items">
+                  <option selected value="">Кто вы?</option>
+                  <option value="Исполнитель">Исполнитель</option>
+                  <option value="Заказчик">Заказчик</option>
+                </select>
+              </div>
 
-            <label for="activity"></label>
-            <input type="text" name="activity" required placeholder="Деятельность" id="name" class="content__activity">
-
-            <label for="email"></label>
-            <input type="email" name="email" required placeholder="E-mail" id="email" class="content__form-email">
-
-            <label for="who"></label>
-            <input type="text" name="who" placeholder="Кто вы?" class="content__form-who">
+            <div class="content__form-input">
+              <label for="activity"></label>
+              <input type="text" name="activity" required placeholder="Навык или услуга" id="activity" class="content__activity">
             </div>
-
+            
+            <div class="content__form-input">
+              <label for="email"></label>
+              <input type="email" name="email" required placeholder="E-mail" id="email" class="content__form-email">
+            </div>
+            
             <button type="submit" class="content__form-btn">Отправить</button>
           </form>
         </div>
 
-        <div class="header__title">
+      </div>
+      <div class="header__title">
           <div class="header__title__wrap">
           <h1>Развитие<br> и заработок<br> на своих навыках</h1>
           <p>Всё как у взрослых!</p>
@@ -76,8 +89,6 @@
             <a href="https://instagram.com/bursh.official"><img src="img/in.png" alt=""></a>
           </div>
         </div>
-      </div>
-
     </div>
   </header>
   <!----->
@@ -164,20 +175,29 @@
             <p class="contacts__form-text">Вы можете подать заявку для сотрудничества</p>
             
             <div class="contacts__input-wrap">
-            <label for="name"></label>
-            <input type="text" name="name" required placeholder="Имя" id="name" class="contacts__form-name">
-
-            <label for="name1"></label>
-            <input type="text" name="name1" required placeholder="Фамилия" id="name" class="contacts__form-name1">
-
-            <label for="activity"></label>
-            <input type="text" name="activity" required placeholder="Деятельность" id="name" class="contacts__activity">
-
-            <label for="email"></label>
-            <input type="email" name="email" required placeholder="E-mail" id="email" class="contacts__form-email">
-
-            <label for="who"></label>
-            <input type="text" name="who" placeholder="Кто вы?" class="contacts__form-who">
+            <div class="contacts__form-input">
+              <label for="name"></label>
+              <input type="text" name="name" required placeholder="Имя" id="name1" class="contacts__form-name">
+            </div>
+            
+            <div class="contacts__form-input">
+              <label for="name1"></label>
+              <input type="text" name="name1" required placeholder="Фамилия" id="fio1" class="contacts__form-name1">
+            </div>
+            <div class="contacts__form-input">
+              <label for="activity"></label>
+              <input type="text" name="activity" required placeholder="Деятельность" id="activity1" class="contacts__activity">
+            </div>
+            
+            <div class="contacts__form-input">
+              <label for="email"></label>
+              <input type="email" name="email" required placeholder="E-mail" id="email1" class="contacts__form-email">
+            </div>
+            
+            <div class="contacts__form-input">
+              <label for="who"></label>
+              <input type="text" name="who" placeholder="Кто вы?" id="who1" class="contacts__form-who">
+              </div>
             </div>
 
             <button type="submit" class="contacts__form-btn">Отправить</button>
