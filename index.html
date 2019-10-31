@@ -187,7 +187,7 @@
 
             <div class="contacts__form-input">
               <label for="activity1"></label>
-              <input type="text" name="activity1" required placeholder="Деятельность" id="activity1" class="contacts__activity">
+              <input type="text" name="activity1" required placeholder="Навык или услуга" id="activity1" class="contacts__activity">
             </div>
             
             <div class="contacts__form-input">
@@ -195,11 +195,15 @@
               <input type="email" name="email1" required placeholder="E-mail" id="email1" class="contacts__form-email">
             </div>
             
+
             <div class="contacts__form-input">
-              <label for="who1"></label>
-              <input type="text" name="who1" placeholder="Кто вы?" id="who1" class="contacts__form-who">
+                <label for="who1"></label>
+                <select class="contacts__select" id="who1" name="who1">
+                  <option selected value="">Кто вы?</option>
+                  <option value="Исполнитель">Исполнитель</option>
+                  <option value="Заказчик">Заказчик</option>
+                </select>
               </div>
-            </div>
 
             <button type="submit" class="contacts__form-btn">Отправить</button>
           </form>
